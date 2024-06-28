@@ -27,6 +27,7 @@ thisdict["color"]="white"
 thisdict.update({"heroine": "anveet"})
 
 print("added dictionary",thisdict)
+print("added dictionary",thisdict)
 ##################remove items
 thisdict.pop("heroine")
 print(thisdict)
