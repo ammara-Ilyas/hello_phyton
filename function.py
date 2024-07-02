@@ -1,30 +1,45 @@
-#############################Function
+# two types of function
+#user defined function
 y="You are awesome"
 def myFunc():
     print("like as",y)
 myFunc()
-######################list
-x = ["apple", "banana", "cherry"]	
-my_list=["Hero","Villain","Dada","Hero"]
-my_list[1:3]=["jahan","Sikander"]
-#########addd
-my_list.append("Bahobali")
-my_list.insert(0,"Villain")
-print(my_list,"my_list")
-print(len(my_list))
-print("2 no",my_list[2])
-print("1:3",my_list[1:3])
+#
+def my_func(fname,lname):
+    print(fname," ",lname)
+    
+my_func("Maha","nazz")   
+#default value
+def default_func(a=2,b=3):
+    print(a*b)
+default_func()    
+#default value start from end
+def default_func(a,b=3):
+    print(a*b)
+default_func(10) 
 
-########remove
-print("remove")
-thislist = ["apple", "banana", "cherry", "banana","cherry", "banana","cherry","apple"]
-thislist.remove("banana")
-print(thislist,"remove")
-thislist.pop()
-print(thislist,"pop")
-del thislist[0]
-print(thislist,"del")
-thislist.clear()
-print(thislist,"clear")
+list=["yellow","blue","golden","blue","orange"]
+def print_list(list):
+    for i in range(len(list)):
+       print(i,list[i],end=",")
+       
+print_list(list)       
+# #built in function
+# print("hello","world") #sep=""
+# print("hello",end="+")  #by default end="\n"
+# print("world")
+# len("Hello")
 
 
+
+
+
+#Recursion
+
+def show(n):
+    if n==10:
+        return
+    print(n)
+    show(n+1)
+    
+show(2)    
