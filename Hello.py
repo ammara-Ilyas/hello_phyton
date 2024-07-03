@@ -88,3 +88,9 @@
 # ###############################Integers
 # x=20
 # print(x.__float__())
+
+# f-string
+name="Yahoo"
+age=23
+hobby="Hockey"
+print(f"My name is {name}, and my age is {age} and my hobby is {hobby}")
