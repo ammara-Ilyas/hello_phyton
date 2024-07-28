@@ -1,0 +1,3 @@
+# Poetry   like npm
+#fastApi library  for fast api
+#uvicorn library  for continuously run like nodemon

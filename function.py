@@ -9,6 +9,7 @@ def my_func(fname,lname):
     print(fname," ",lname)
     
 my_func("Maha","nazz")   
+
 #default value
 def default_func(a=2,b=3):
     print(a*b)
@@ -21,9 +22,14 @@ default_func(10)
 list=["yellow","blue","golden","blue","orange"]
 def print_list(list):
     for i in range(len(list)):
-       print(i,list[i],end=",")
+       print("end",i,list[i],end=",")
        
-print_list(list)       
+       
+print_list(list) 
+
+with open("output.txt", "w") as file:
+    print("Hello, World!", file=file)
+      
 # #built in function
 # print("hello","world") #sep=""
 # print("hello",end="+")  #by default end="\n"
